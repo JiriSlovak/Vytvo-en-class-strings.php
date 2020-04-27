@@ -3,8 +3,8 @@
 
 class stringSlovak {
     // substr - Tohle vypise cast stringu
-    static public function substrSlovak($retezec,$tadyzace) {
-        return substr($retezec, $tadyzace);
+    static public function substrSlovak($retezec,$tadyzacne) {
+        return substr($retezec, $tadyzacne);
 }
 //String z retezce vlozi na definovane misto
 static public function substr__replaceSlovak($text,$tohlechcinahradit,$zacatek) {
@@ -81,7 +81,7 @@ static public function ucwordsSlovak($veta) {
 
 }
 $retezec = "ToHleJeRetezec";
-$tadyzace =7;
+$tadyzacne =7;
 $text="Tohle je text";
 $tohlechcinahradit="neni";
 $zacatek= 6;
@@ -107,7 +107,7 @@ $rozmezi= 'A..z';
 $odsud="\a\aaaAhoj zde jsem\a\a";
 $topryc="\a";
 
-var_dump(stringSlovak::substrSlovak($retezec, $tadyzace));
+var_dump(stringSlovak::substrSlovak($retezec, $tadyzacne));
 var_dump(stringSlovak::substr__replaceSlovak($text, $tohlechcinahradit, $zacatek));
 var_dump(stringSlovak::strtrSlovak($veta, $tohlenahrazuji, $timhlenahrazuji));
 var_dump(stringSlovak::strtoupperSlovak($vsechnovelke));
